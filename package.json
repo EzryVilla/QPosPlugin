@@ -1,0 +1,17 @@
+{
+  "name": "posPlugin",
+  "version": "1.0.0",
+  "description": "dspread pos blu plugin",
+  "cordova": {
+    "id": "posPlugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "chenqianmeng",
+  "license": "ISC"
+}

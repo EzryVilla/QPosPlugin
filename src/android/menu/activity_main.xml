@@ -1,0 +1,119 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/reset_qpos"
+        android:orderInCategory="100"
+        android:title="@string/reset_qpos"/>
+     <item
+        android:id="@+id/menu_update"
+        android:orderInCategory="100"
+        android:title="@string/menu_update"/>
+     <item
+        android:id="@+id/input_pin_or_not"
+        android:orderInCategory="100"
+        android:title="input_pin_or_not"/>
+    <item
+        android:id="@+id/get_ksn"
+        android:orderInCategory="100"
+        android:title="@string/get_ksn"/>
+    <item
+        android:id="@+id/getEncryptData"
+        android:orderInCategory="100"
+        android:title="@string/get_encrypt_data"/>
+    <item
+        android:id="@+id/addKsn"
+        android:orderInCategory="100"
+        android:title="@string/add_ksn"/>
+     <item
+        android:id="@+id/doTradeLogOperation"
+        android:orderInCategory="100"
+        android:title="@string/do_tradelog_operation"/>
+    <item
+        android:id="@+id/get_update_key"
+        android:orderInCategory="100"
+        android:title="@string/get_update_key"/>
+    <item
+        android:id="@+id/menu_get_deivce_info"
+        android:orderInCategory="100"
+        android:title="@string/get_info"/>
+    <item
+        android:id="@+id/menu_get_pos_id"
+        android:orderInCategory="100"
+        android:title="@string/get_pos_id"/>
+     <item
+        android:id="@+id/menu_operate_mafire"
+        android:orderInCategory="100"
+        android:title="@string/operate_mafire"/>
+    <item
+        android:id="@+id/menu_get_pin"
+        android:orderInCategory="100"
+        android:title="@string/get_pin"/>
+    <item
+        android:id="@+id/set_sleepmode_time"
+        android:orderInCategory="100"
+        android:title="@string/set_sleepMode_time"/>
+    <item
+        android:id="@+id/set_shutdowm_time"
+        android:orderInCategory="100"
+        android:title="set the shutdowm time"/>
+    <item
+        android:id="@+id/menu_icc"
+        android:orderInCategory="100"
+        android:title="ICC"/>
+    <item
+        android:id="@+id/about"
+        android:orderInCategory="100"
+        android:title="@string/about"/>
+    <item
+        android:id="@+id/audio_test"
+        android:orderInCategory="100"
+        android:title="@string/audio_open"/>
+    <item
+        android:id="@+id/other"
+        android:orderInCategory="100"
+        android:title="@string/other"/>
+    <item
+        android:id="@+id/isCardExist"
+        android:orderInCategory="100"
+        android:title="@string/isCardExist"/>
+    <item android:id="@+id/injectKeys"
+        android:orderInCategory="100"
+        android:title="@string/updateInjectKeys"/>
+ 	<item android:id="@+id/setBuzzer"
+        android:title="@string/setBuzzer"
+        android:orderInCategory="100" />
+ 	<item android:id="@+id/updateIPEK"
+        android:title="@string/updateIPEK"
+        android:orderInCategory="100" />
+ 	<item android:id="@+id/getSleepTime"
+        android:title="getSleepTime"
+        android:orderInCategory="100" />
+ 	<item android:id="@+id/updateEMVAPP"
+        android:title="@string/updateEMV"
+        android:orderInCategory="100" />
+ 	<item android:id="@+id/updateEMVCAPK"
+        android:title="@string/updateEMVRID"
+        android:orderInCategory="100" />
+ 	<item android:id="@+id/getQuickEmvStatus"
+        android:title="@string/getQuickEmvStatus"
+        android:orderInCategory="100" />
+ 	<item android:id="@+id/setQuickEmvStatus"
+        android:title="@string/setQuickEmvStatus"
+        android:orderInCategory="100" />
+ 	 <item
+        android:id="@+id/setMasterkey"
+        android:orderInCategory="100"
+        android:title="setMasterkey"/>
+ 	 <item
+        android:id="@+id/one"
+        android:orderInCategory="100"
+        android:title="parse data"/>
+ 	 <item
+        android:id="@+id/two"
+        android:orderInCategory="100"
+        android:title="decrypt data"/>
+ 	 <item
+        android:id="@+id/three"
+        android:orderInCategory="100"
+        android:title="clear"/>
+</menu>

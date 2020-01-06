@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="posPlugin" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>dspread_pos_plugin</name>
+	<js-module name="dspread_pos_plugin" src="www/dspread_pos_plugin.js">
+		<clobbers target="cordova.plugins.dspread_pos_plugin" />
+	</js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="dspread_pos_plugin">
+				<param name="android-package" value="org.apache.cordova.posPlugin.dspread_pos_plugin" />
+			</feature>
+		</config-file>
+		
+		<config-file parent="/*" target="AndroidManifest.xml">
+			<uses-permission android:name="android.permission.WAKE_LOCK" />
+			<uses-permission android:name="android.permission.BLUETOOTH" />
+			<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+			<uses-permission android:name="android.permission.RECORD_AUDIO" />
+			<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+			<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+			<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+			<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+			<uses-feature android:name="android.hardware.usb.host" />
+		</config-file>
+		<config-file  target="AndroidManifest.xml" parent="/manifest/application">
+		</config-file>
+		<source-file src="src/android/dspread_pos_plugin.java" target-dir="src/org/apache/cordova/posPlugin" />
+		<source-file src="src/android/QPOSUtil.java" target-dir="src/org/apache/cordova/posPlugin" />
+		<source-file src="src/android/TRACE.java" target-dir="src/org/apache/cordova/posPlugin" />
+		<source-file src="src/android/libs/dspread_android_printer_sdk_1.0.1.jar" target-dir="libs" />
+		<source-file src="src/android/libs/android-support-v4.jar" target-dir="libs" />
+		<source-file src="src/android/libs/bcprov-ext-jdk15on-154.jar" target-dir="libs" />
+		<source-file src="src/android/libs/sun.misc.BASE64Decoder.jar" target-dir="libs" />
+		<source-file src="src/android/libs/injectKey.jar" target-dir="libs" />
+		<source-file src="src/android/libs/mpaysdk.jar" target-dir="libs" />
+		
+		<source-file src="src/android/values/dimens.xml" target-dir="res/values" />
+		<source-file src="src/android/values/pos_strings.xml" target-dir="res/values" />
+		<source-file src="src/android/values/styles.xml" target-dir="res/values" />
+		<source-file src="src/android/values-zh-rCN/strings.xml" target-dir="res/values-zh-rCN" />
+		
+		<source-file src="src/android/menu/activity_main.xml" target-dir="res/menu" />
+		<source-file src="src/android/menu/icc_activity_main.xml" target-dir="res/menu" />
+		
+		<source-file src="src/android/layout/activity_about.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/activity_main.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/alert_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/amount_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/application_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/audio_activity_main.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/bt_qpos_item.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/buci_activity_main.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/confirm_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/connected_device_list.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/device_list.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/device_name.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/emv_app_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/icc_activity_main.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/my_alert_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/pin_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/refer_process_dialog.xml" target-dir="res/layout" />
+		<source-file src="src/android/layout/search_bt_name.xml" target-dir="res/layout" />
+		
+		<source-file src="src/android/drawable-hdpi/bluetooth_blue.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/bluetooth_blue_unbond.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/ic_headphones_on.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/pgsbar0.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/pgsbar1.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/pgsbar2.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/pgsbar3.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/pgsbar4.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/pgsbar5.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/pgsbar6.png" target-dir="res/drawable-hdpi" />
+		<source-file src="src/android/drawable-hdpi/serialport.png" target-dir="res/drawable-hdpi" />
+	  
+	  <source-file src="src/android/anim/progressanmi.xml" target-dir="res/anim" />
+	  
+
+	</platform>
+</plugin>
